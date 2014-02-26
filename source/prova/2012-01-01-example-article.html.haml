@@ -1,0 +1,22 @@
+---
+title: Example Article
+date: 2012-01-01
+tags: example
+category: prova
+published: true
+image: "https://lh6.googleusercontent.com/-2mjjIOP9Ab0/UpXLaLxpqaI/AAAAAAAAeKw/UFMK9nV5yQM/w1232-h693-no/jakarta-forest-capital-region-indonesia-world-city-266089.jpg"
+---
+
+- if current_page.data.title
+    %h1= current_page.data.title
+    %img{:src => current_page.data.image, :alt => 'palla'}
+
+%p{:class => 'abstract'}= lorem.paragraph
+
+READMORE
+
+%h3
+%p= lorem.paragraph
+%p= lorem.paragraph
+%p= lorem.paragraph
+%p= lorem.paragraph
