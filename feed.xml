@@ -38,7 +38,7 @@
     <link rel="alternate" href="http://blog.url.com/prova/2014/02/25/prova_articolo/"/>
     <id>http://blog.url.com/prova/2014/02/25/prova_articolo/</id>
     <published>2014-02-25T16:55:00Z</published>
-    <updated>2014-02-26T12:04:42+01:00</updated>
+    <updated>2014-02-26T14:05:31+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -50,7 +50,7 @@
     <link rel="alternate" href="http://blog.url.com/prova/2012/01/01/example-article/"/>
     <id>http://blog.url.com/prova/2012/01/01/example-article/</id>
     <published>2012-01-01T00:00:00Z</published>
-    <updated>2014-02-26T12:03:34+01:00</updated>
+    <updated>2014-02-26T14:05:31+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -65,7 +65,7 @@ regular paragraph.&lt;/p&gt;
 &lt;p&gt;The quick brown fox jumped over the lazy
 dog's back.&lt;/p&gt;
 
-&lt;h1 id="header-3"&gt;Header 3&lt;/h1&gt;
+&lt;h1 id="header-3-ciao-ciao"&gt;Header 3 Ciao Ciao&lt;/h1&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Red&lt;/li&gt;
