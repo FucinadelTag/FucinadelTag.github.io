@@ -1,9 +1,10 @@
 ---
 title: Example Article
-date: {}
+date: 2012-01-01
 tags: example
 category: prova
 published: true
+image: "https://lh6.googleusercontent.com/-2mjjIOP9Ab0/UpXLaLxpqaI/AAAAAAAAeKw/UFMK9nV5yQM/w1232-h693-no/jakarta-forest-capital-region-indonesia-world-city-266089.jpg"
 ---
 
 A First Level Header
@@ -11,6 +12,8 @@ A First Level Header
 
 A Second Level Header
 ---------------------
+
+<%= tag :img, :src => current_page.image %>
 
 Now is the time for all good men to come to
 the aid of their country. This is just a

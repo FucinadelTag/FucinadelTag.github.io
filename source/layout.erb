@@ -39,7 +39,9 @@
     <!-- Main Blog Content -->
     <div class="large-9 columns" role="content">
 
-      <article>
+    <%= yield %>
+
+        <article>
 
         <h3><a href="#">Blog Post Title</a></h3>
         <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
@@ -58,7 +60,7 @@
 
         <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
 
-      </article>
+        </article>
 
       <hr />
 
@@ -92,20 +94,32 @@
 
     <aside class="large-3 columns">
 
-      <h5>Categories</h5>
-      <ul class="side-nav">
-        <li><a href="#">News</a></li>
-        <li><a href="#">Code</a></li>
-        <li><a href="#">Design</a></li>
-        <li><a href="#">Fun</a></li>
-        <li><a href="#">Weasels</a></li>
-      </ul>
+        <h5>Recent Articles</h5>
+        <ul class="side-nav">
+            <% blog.articles[0...10].each do |article| %>
+                <li><%= link_to article.title, article %></li>
+            <% end %>
+        </ul>
 
-      <div class="panel">
-        <h5>Featured</h5>
-        <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-        <a href="#">Read More &rarr;</a>
-      </div>
+        <h5>Tags</h5>
+        <ul class="side-nav">
+            <% blog.tags.each do |tag, articles| %>
+                <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</li>
+             <% end %>
+        </ul>
+
+        <h5>By Year</h5>
+        <ul class="side-nav">
+            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+                <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</li>
+            <% end %>
+        </ul>
+
+        <div class="panel">
+            <h5>Featured</h5>
+            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+            <a href="#">Read More &rarr;</a>
+        </div>
 
     </aside>
 
@@ -136,32 +150,6 @@
     </div>
   </footer>
 
-    <div id="main" role="main">
-      <%= yield %>
-    </div>
-
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
-
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
-          <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-          <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</a></li>
-        <% end %>
-      </ol>
-    </aside>
 
     <%= javascript_include_tag  "all" %>
   </body>

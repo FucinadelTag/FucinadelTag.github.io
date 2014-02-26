@@ -127,8 +127,6 @@ end
 activate :relative_assets
 set :relative_links, true
 
-activate :livereload
-
 
 # Add bower's directory to sprockets asset path
 after_configuration do

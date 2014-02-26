@@ -3,5 +3,6 @@ title: prova_articolo2
 date: 2014-02-25 21:10 UTC
 tags:
 category: prova
+image: "https://lh6.googleusercontent.com/-2mjjIOP9Ab0/UpXLaLxpqaI/AAAAAAAAeKw/UFMK9nV5yQM/w1232-h693-no/jakarta-forest-capital-region-indonesia-world-city-266089.jpg"
 ---
 
