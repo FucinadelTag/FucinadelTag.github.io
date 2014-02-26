@@ -50,49 +50,17 @@
     <link rel="alternate" href="http://blog.url.com/prova/2012/01/01/example-article/"/>
     <id>http://blog.url.com/prova/2012/01/01/example-article/</id>
     <published>2012-01-01T00:00:00Z</published>
-    <updated>2014-02-26T17:14:29+01:00</updated>
+    <updated>2014-02-26T23:16:19+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;h1 id="a-first-level-header"&gt;A First Level Header&lt;/h1&gt;
+    <content type="html">&lt;p class='abstract'&gt;Tenetur voluptates ex libero quia ullam possimus officia illum ratione. suscipit nihil non ut. iste fugiat cumque architecto aliquid qui quas distinctio est voluptatem omnis ut velit&lt;/p&gt;
 
-&lt;h2 id="a-second-level-header"&gt;A Second Level Header&lt;/h2&gt;
-
-&lt;p&gt;&amp;lt;%= tag :img, :src =&amp;gt; current_page.image %&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Now is the time for all good men to come to
-the aid of their country. This is just a
-regular paragraph.&lt;/p&gt;
-
-&lt;p&gt;The quick brown fox jumped over the lazy
-dog's back.&lt;/p&gt;
-
-&lt;h1 id="header-3-ciao-ciao"&gt;Header 3 Ciao Ciao&lt;/h1&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Red&lt;/li&gt;
-  &lt;li&gt;Green
-    &lt;ol&gt;
-      &lt;li&gt;Palla&lt;/li&gt;
-      &lt;li&gt;Ciao&lt;/li&gt;
-      &lt;li&gt;Ciao
-loreno&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Blue&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Palla&lt;/li&gt;
-  &lt;li&gt;Palla&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I get 10 times more traffic from &lt;a title="Google" href="http://google.com/"&gt;Google&lt;/a&gt; than from
-&lt;a title="Yahoo Search" href="http://search.yahoo.com/"&gt;Yahoo&lt;/a&gt; or &lt;a title="MSN Search" href="http://search.msn.com/"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I get 10 times more traffic from &lt;a title="Google" href="http://google.com/"&gt;AAAAA&lt;/a&gt; than from
-&lt;a title="Yahoo Search" href="http://search.yahoo.com/"&gt;Yahoo&lt;/a&gt; or &lt;a title="MSN Search" href="http://search.msn.com/"&gt;MSN&lt;/a&gt;.&lt;/p&gt;
-
+&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;Assumenda sapiente voluptatem ea iure ut nihil sunt. vitae maiores iure suscipit accusamus iste. et laboriosam id voluptatem. omnis veritatis deleniti qui eveniet dicta suscipit sit&lt;/p&gt;
+&lt;p&gt;Debitis itaque commodi fugiat quis et voluptatem nulla qui temporibus assumenda. dignissimos rem et fuga sunt ut. pariatur voluptas dignissimos in omnis facilis assumenda cumque. asperiores laudantium rerum qui perferendis quo est dicta et possimus optio fugiat. assumenda nam expedita qui animi ad aut excepturi temporibus tempore quibusdam vel qui animi ullam&lt;/p&gt;
+&lt;p&gt;Laudantium amet voluptatem ut nostrum omnis libero. enim occaecati velit animi amet aut. est quae molestiae eveniet maiores dolorem reiciendis doloremque molestiae&lt;/p&gt;
+&lt;p&gt;Quis sequi quod omnis officiis corporis in dolor est quaerat quis molestias. enim nostrum nemo dolores fugit eos et ut saepe ad saepe aut explicabo. architecto odio modi officiis quia aperiam sit est commodi sunt. autem hic voluptatem neque sed error quaerat sapiente sit. beatae quia sed sed perferendis quis aperiam enim alias harum. aut qui eum ratione laboriosam deserunt libero pariatur deserunt veritatis deserunt architecto. vel et laborum quam facilis iure aut&lt;/p&gt;
 </content>
   </entry>
 </feed>

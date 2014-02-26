@@ -1,3 +1,4 @@
-/* line 1, /MiddleMan/blog_fdt/source/stylesheets/style.css.scss */
-.bold {
-  font-weight: bold; }
+/* line 2, /MiddleMan/blog_fdt/source/stylesheets/style.css.scss */
+.prova .abstract {
+  font-style: italic;
+  color: #008cba; }
