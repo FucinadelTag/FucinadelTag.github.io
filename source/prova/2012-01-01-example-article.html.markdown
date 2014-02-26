@@ -1,8 +1,9 @@
 ---
 title: Example Article
-date: 2012-01-01
+date: {}
 tags: example
 category: prova
+published: true
 ---
 
 A First Level Header
@@ -18,7 +19,7 @@ regular paragraph.
 The quick brown fox jumped over the lazy
 dog's back.
 
-# Header 3
+# Header 3 Ciao Ciao
 
 
 1.  Red
