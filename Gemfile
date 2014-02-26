@@ -9,3 +9,4 @@ gem "middleman-blog", "~> 3.5.1"
 gem "builder", "~> 3.0"
 
 gem 'middleman-gh-pages'
+gem 'middleman-s3_sync'
