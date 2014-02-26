@@ -10,3 +10,6 @@ gem "builder", "~> 3.0"
 
 gem 'middleman-gh-pages'
 gem 'middleman-s3_sync'
+gem "middleman-deploy"
+
+gem "middleman-livereload", :github => "middleman/middleman-livereload"

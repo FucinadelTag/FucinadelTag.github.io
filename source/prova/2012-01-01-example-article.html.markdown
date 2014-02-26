@@ -2,7 +2,7 @@
 title: Example Article
 date: 2012-01-01
 tags: example
-category: HTML5
+category: prova
 ---
 
 A First Level Header
