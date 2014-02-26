@@ -11,10 +11,10 @@
   </author>
   <entry>
     <title>prova_articolo3</title>
-    <link rel="alternate" href="http://blog.url.com/html5/2014/02/25/prova_articolo3/"/>
-    <id>http://blog.url.com/html5/2014/02/25/prova_articolo3/</id>
+    <link rel="alternate" href="http://blog.url.com/prova/2014/02/25/prova_articolo3/"/>
+    <id>http://blog.url.com/prova/2014/02/25/prova_articolo3/</id>
     <published>2014-02-25T21:18:00Z</published>
-    <updated>2014-02-26T11:14:24+01:00</updated>
+    <updated>2014-02-26T12:04:14+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -23,10 +23,10 @@
   </entry>
   <entry>
     <title>prova_articolo2</title>
-    <link rel="alternate" href="http://blog.url.com/html5/2014/02/25/prova_articolo2/"/>
-    <id>http://blog.url.com/html5/2014/02/25/prova_articolo2/</id>
+    <link rel="alternate" href="http://blog.url.com/prova/2014/02/25/prova_articolo2/"/>
+    <id>http://blog.url.com/prova/2014/02/25/prova_articolo2/</id>
     <published>2014-02-25T21:10:00Z</published>
-    <updated>2014-02-26T11:14:24+01:00</updated>
+    <updated>2014-02-26T12:03:51+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -35,22 +35,22 @@
   </entry>
   <entry>
     <title>Prova Articolo</title>
-    <link rel="alternate" href="http://blog.url.com/html5/2014/02/25/prova_articolo/"/>
-    <id>http://blog.url.com/html5/2014/02/25/prova_articolo/</id>
+    <link rel="alternate" href="http://blog.url.com/prova/2014/02/25/prova_articolo/"/>
+    <id>http://blog.url.com/prova/2014/02/25/prova_articolo/</id>
     <published>2014-02-25T16:55:00Z</published>
-    <updated>2014-02-26T11:14:24+01:00</updated>
+    <updated>2014-02-26T12:04:42+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;%h1 Prova&lt;/p&gt;
+    <content type="html">&lt;p&gt;Prova&lt;/p&gt;
 </content>
   </entry>
   <entry>
     <title>Example Article</title>
-    <link rel="alternate" href="http://blog.url.com/html5/2012/01/01/example-article/"/>
-    <id>http://blog.url.com/html5/2012/01/01/example-article/</id>
+    <link rel="alternate" href="http://blog.url.com/prova/2012/01/01/example-article/"/>
+    <id>http://blog.url.com/prova/2012/01/01/example-article/</id>
     <published>2012-01-01T00:00:00Z</published>
-    <updated>2014-02-26T11:14:24+01:00</updated>
+    <updated>2014-02-26T12:03:34+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
