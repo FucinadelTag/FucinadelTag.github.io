@@ -6,7 +6,7 @@ category: prova
 published: true
 ---
 
-![Prova](/source/prova/bannerCHtrasporto_ENG_70.jpg)A First Level Header
+A First Level Header
 ====================
 
 A Second Level Header
