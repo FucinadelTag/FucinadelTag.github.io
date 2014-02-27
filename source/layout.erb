@@ -29,75 +29,9 @@
     </div>
   </div>
 
-  <!-- End Nav -->
 
-  <div class="row">
-    <div class="large-12 columns">
-        <ul class="example-orbit" data-orbit>
-            <li><img src=
-            "http://placehold.it/1000x400&amp;text=[%20img%201%20]"></li>
-            <li><img src=
-            "http://placehold.it/1000x400&amp;text=[%20img%202%20]"></li>
-            <li><img src=
-            "http://placehold.it/1000x400&amp;text=[%20img%203%20]"></li>
-        </ul>
-    </div>
-</div>
+    <%= yield %>
 
- <% sitemap.resources %>
-
-
-  <!-- Main Page Content and Sidebar -->
-
-  <div class="row">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns" role="content">
-
-        <%= yield %>
-
-    </div>
-
-    <!-- End Main Content -->
-
-
-    <!-- Sidebar -->
-
-    <aside class="large-3 columns">
-
-        <h5>Recent Articles</h5>
-        <ul class="side-nav">
-            <% blog.articles[0...10].each do |article| %>
-                <li><%= link_to article.title, article %></li>
-            <% end %>
-        </ul>
-
-        <h5>Tags</h5>
-        <ul class="side-nav">
-            <% blog.tags.each do |tag, articles| %>
-                <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</li>
-             <% end %>
-        </ul>
-
-        <h5>By Year</h5>
-        <ul class="side-nav">
-            <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-                <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</li>
-            <% end %>
-        </ul>
-
-        <div class="panel">
-            <h5>Featured</h5>
-            <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
-            <a href="#">Read More &rarr;</a>
-        </div>
-
-    </aside>
-
-    <!-- End Sidebar -->
-  </div>
-
-  <!-- End Main Content and Sidebar -->
 
 
   <!-- Footer -->
