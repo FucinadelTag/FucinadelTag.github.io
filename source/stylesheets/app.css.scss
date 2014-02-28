@@ -1,31 +1,29 @@
 @import "settings";
 @import "foundation.scss";
 
-
-header {
-  @include grid-row;
-
-  .logo  { @include grid-column($columns:3, $center:true); }
-  padding-bottom: em-calc(10px);
-
+.right-menu{
+    border-left: 2px solid $crumb-border-color;
 }
 
+.blog-metadata{
+    margin-bottom: rem-calc(10px);
+    font-size: 80%;
+}
 
-.main-content {
-  @include grid-row;
-
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
+.index {
+  img {
+    padding-bottom: rem-calc(20px);
   }
+}
 
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
+.blog {
+    .abstract{
+        font-style: italic;
+        color: scale-color($body-font-color, $lightness: 35%);
+        margin-top: rem-calc(10px);
+    }
+    .padding {
+        padding-bottom: rem-calc(20px);
+    }
 
 }

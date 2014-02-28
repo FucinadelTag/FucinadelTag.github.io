@@ -1,25 +1,25 @@
 ---
 layout: home
 ---
-
+<ul class="large-block-grid-2">
 <% page_articles.each_with_index do |article, i| %>
 
-    <article>
 
-        <h3><%= link_to article.title, article %></h3>
-        <h6>Written by <a href="#">John Smith</a> on <%= article.date.strftime('%b %e') %>.</h6>
-
-        <div class="row">
-            <div class="large-6 columns">
-                <%= article.summary %>
+    <li>
+        <article>
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3><%= link_to article.title, article %></h3>
+                    <h6 class="subheader blog-metadata">Scritto da <a href="#"><%= article.metadata[:page]["autore"] %></a> on <%= article.date.strftime('%b %e %Y') %>.</h6>
+                    <%= tag :img, :src => article.metadata[:page]["image"] %>
+                    <%= article.summary %>
+                </div>
             </div>
-            <div class="large-6 columns">
-                <%= tag :img, :src => article.metadata[:page]["image"] %>
-            </div>
-        </div>
+        </article>
+    </li>
 
-    </article>
 <% end %>
+</ul>
 
 <% if paginate %>
   <% if next_page %>

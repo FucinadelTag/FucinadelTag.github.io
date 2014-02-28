@@ -1,5 +1,6 @@
 ---
 title: prova_articolo2
+autore: Luca Nicola
 date: 2014-02-25 21:10 UTC
 tags:
 category: prova

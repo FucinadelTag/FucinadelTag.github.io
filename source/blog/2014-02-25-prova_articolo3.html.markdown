@@ -1,5 +1,6 @@
 ---
 title: prova_articolo3
+autore: Luca Nicola
 date: 2014-02-25 21:18 UTC
 tags: palla, ciao, lorenzo
 category: prova
