@@ -41,8 +41,8 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "pagine/*", :layout => :main
-page "blog/*", :layout => :main
+page "pagine/*", :layout => :page
+page "blog/*", :layout => :blog
 
 activate :directory_indexes
 
