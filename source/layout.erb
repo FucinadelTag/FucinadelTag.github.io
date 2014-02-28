@@ -9,25 +9,35 @@
     <%= stylesheet_link_tag "app", "style" %>
     <%= javascript_include_tag "modernizr" %>
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
   </head>
   <body class="<%= page_classes %>">
 
   <!-- Nav Bar -->
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><%= link_to 'Philips', '/index.html'  %></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+            </ul>
 
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><%= link_to 'Cosa dice la legge', '/pagine/cosa_dice_la_legge.html', :class => 'button'  %></li>
-         <li><a href="#" class="button">Link 2</a></li>
-         <li><a href="#" class="button">Link 3</a></li>
-         <li><a href="#" class="button">Link 4</a></li>
-        </ul>
-      </div>
-      <h1><%= link_to 'Philips', '/index.html'  %> <small>This is my blog</small></h1>
-      <hr />
+            <section class="top-bar-section">
+                <!-- Right Nav Section -->
+                <ul class="right">
+                    <li><%= link_to 'Cosa dice la legge', '/pagine/cosa_dice_la_legge.html'  %></li>
+                    <li class="has-dropdown">
+                        <a href="#">Right Button with Dropdown</a>
+                        <ul class="dropdown">
+                            <li><a href="#">First link in dropdown</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
     </div>
-  </div>
 
 
     <%= yield %>
