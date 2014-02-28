@@ -9,10 +9,12 @@ layout: home
         <article>
             <div class="row">
                 <div class="large-12 columns">
-                    <h3><%= link_to article.title, article %></h3>
-                    <h6 class="subheader blog-metadata">Scritto da <a href="#"><%= article.metadata[:page]["autore"] %></a> on <%= article.date.strftime('%b %e %Y') %>.</h6>
-                    <%= tag :img, :src => article.metadata[:page]["image"] %>
+                    <%= partial(:header_post, :locals => { :article => article}) %>
+                    <% link_to article do %>
+                        <%= tag :img, :src => article.metadata[:page]["image"], :title => article.title %>
+                    <% end %>
                     <%= article.summary %>
+                    <%= link_to 'Leggi tutto…', article %>
                 </div>
             </div>
         </article>
