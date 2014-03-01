@@ -12,14 +12,14 @@
     <h5>Tags</h5>
     <ul class="side-nav">
         <% blog.tags.each do |tag, articles| %>
-            <li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</li>
+            <li><%= link_to tag+' ('+articles.size.to_s+')', tag_path(tag) %></li>
          <% end %>
     </ul>
 
     <h5>By Year</h5>
     <ul class="side-nav">
         <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-            <li><%= link_to year, blog_year_path(year) %> (<%= articles.size %>)</li>
+            <li><%= link_to year.to_s+' ('+articles.size.to_s+')', blog_year_path(year) %></li>
         <% end %>
     </ul>
 
