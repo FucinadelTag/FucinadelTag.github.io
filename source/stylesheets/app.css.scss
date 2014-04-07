@@ -1,6 +1,14 @@
 @import "settings";
 @import "foundation.scss";
 
+.menu {
+  margin-top: rem-calc(4px);
+  margin-bottom: rem-calc(4px);
+  img {
+    padding-top: rem-calc(10px);
+  }
+}
+
 .right-menu{
     border-left: 2px solid $crumb-border-color;
 }

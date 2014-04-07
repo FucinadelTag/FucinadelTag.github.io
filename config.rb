@@ -31,13 +31,20 @@ activate :blog do |blog|
 
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
-  blog.sources = "blog/{year}-{month}-{day}-{title}.html"
-  blog.permalink = "blog/{year}/{month}/{day}/{title}.html"
+  blog.sources = "blog/{category}/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "blog/{category}/{year}/{month}/{day}/{title}.html"
 
   # Enable pagination
-  # blog.paginate = true
-  # blog.per_page = 10
-  # blog.page_link = "page/{num}"
+  blog.paginate = true
+  blog.per_page = 10
+  blog.page_link = "page/{num}"
+
+  blog.custom_collections = {
+    category: {
+      link: '/categories/{category}.html',
+      template: '/category.html'
+    }
+  }
 end
 
 page "/feed.xml", layout: false
@@ -141,6 +148,9 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+activate :livereload
+
 
 # Build-specific configuration
 configure :build do
