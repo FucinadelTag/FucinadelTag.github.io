@@ -26,8 +26,8 @@
                 <section class="top-bar-section">
                     <!-- Right Nav Section -->
                     <ul class="right">
-                        <% blog.articles.group_by {|a| a.metadata[:page]['category']}.each do |categoria, articles| %>
-                            <li><%= link_to categoria.gsub('_'){|match| ' ' }, category_path(categoria) %></li>
+                        <% blog.articles.group_by {|a| a.metadata[:page]['category']}.sort.each do |categoria, articles| %>
+                            <li><%= link_to categoria.gsub('_', ' '), category_path(categoria) %></li>
                         <% end %>
                     </ul>
                 </section>

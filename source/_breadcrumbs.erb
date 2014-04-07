@@ -2,8 +2,8 @@
     <div class="small-12 columns">
         <ul class="breadcrumbs">
             <li><%= link_to 'Home', '/' %></li>
-            <% if current_page.parent %>
-                <li><%= link_to current_page.parent.metadata[:page]['title'], current_page.parent %></li>
+            <% if current_page.metadata[:page]['category'] %>
+                <li><%= link_to current_page.metadata[:page]['category'].gsub('_', ' '), category_path(current_page.metadata[:page]['category']) %></li>
             <% end %>
          </ul>
     </div>
