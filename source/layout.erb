@@ -22,13 +22,13 @@
                     </li>
                     <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
                 </ul>
-
                 <section class="top-bar-section">
                     <!-- Right Nav Section -->
                     <ul class="right">
                         <% blog.articles.group_by {|a| a.metadata[:page]['category']}.sort.each do |categoria, articles| %>
                             <li><%= link_to categoria.gsub('_', ' '), category_path(categoria) %></li>
                         <% end %>
+                        <li><%= link_to 'Contatti', '#contatti' %></li>
                     </ul>
                 </section>
             </nav>
@@ -47,16 +47,53 @@
     <div class="large-12 columns">
       <hr />
       <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+      <div class="large-5 columns">
+        <h4 class="subheader" id="contatti">Contattaci per qualsiasi domanda</h4>
+        <div id="wufoo-rho20bt1r0coec">
+        Fill out my <a href="https://fucinadeltag.wufoo.com/forms/rho20bt1r0coec">online form</a>.
         </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-          </ul>
+      </div>
+        <script type="text/javascript">var rho20bt1r0coec;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'fucinadeltag',
+        'formHash':'rho20bt1r0coec',
+        'autoResize':true,
+        'height':'517',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'hide',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { rho20bt1r0coec = new WufooForm();rho20bt1r0coec.initialize(options);rho20bt1r0coec.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+
+        <div class="large-7 columns">
+
+            <div class="row" >
+
+                <div class="large-6 columns">
+                  <h4 class="subheader">Philips Healthcare</h4>
+                  <p>
+                    Questa iniziativa, <strong>sponsorizzata da Philips Healthcare</strong>, ha lo scopo di far comprendere che ognuno di noi ha la possibilità di salvare una vita se dispone degli strumenti tecnologici appropriati.
+                  </p>
+                </div>
+
+                <div class="large-6 columns">
+                    <div class="indirizzo">
+                        Philips S.p.A. - Divisione Healthcare<br />
+                        Via Casati, 23 20052 Monza (MB) - Italy
+                        <h5 class="subheader">800 782 217</h5>
+                    </div>
+                    <hr>
+                    <img alt="Defibrillatori Philips" src="https://lh4.googleusercontent.com/-fYMPraFrbak/U0U8tFbCEGI/AAAAAAAAljg/pEdrEfnCxbA/s250-no/Philips-logo.png">
+                </div>
+
+            </div>
+
+
         </div>
       </div>
     </div>
