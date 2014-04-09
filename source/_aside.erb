@@ -9,7 +9,7 @@
         <% end %>
     </ul>
 
-    <h5>Categorie</h5>
+    <h5>Tag</h5>
     <ul class="side-nav">
         <% blog.tags.each do |tag, articles| %>
             <li><%= link_to tag+' ('+articles.size.to_s+')', tag_path(tag) %></li>

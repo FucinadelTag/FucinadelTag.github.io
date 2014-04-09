@@ -1,14 +1,27 @@
 <% wrap_layout :layout do%>
 
     <div class="row">
-        <div class="large-12 columns">
-            <ul class="example-orbit" data-orbit>
-                <li><img src=
-                "https://lh5.googleusercontent.com/-Rl53WkxXEw0/U0JJH6E7OjI/AAAAAAAAjL8/u36tduwBaD4/w960-h330-no/defibrillatori_legge.jpg"></li>
-                <li><img src=
-                "http://placehold.it/1000x400&amp;text=[%20img%202%20]"></li>
-                <li><img src=
-                "http://placehold.it/1000x400&amp;text=[%20img%203%20]"></li>
+        <div class="large-12 columns slide">
+            <ul data-orbit data-options="animation:slide;
+                                         pause_on_hover:true;
+                                         next_on_click: true;
+                                         slide_number: false;
+                                         timer_show_progress_bar: false;
+                                         navigation_arrows:false;
+                                         bullets:false;">
+
+                <% blog.articles[0...1].each do |article| %>
+
+                    <li>
+                        <% link_to article do %>
+                            <%= tag :img, :src => article.metadata[:page]["image"], :title => article.title %>
+                        <% end %>
+                        <div class="my-orbit-caption">
+                            <%= partial(:header_post, :locals => { :article => article}) %>
+                        </div>
+                    </li>
+
+                <% end %>
             </ul>
         </div>
     </div>

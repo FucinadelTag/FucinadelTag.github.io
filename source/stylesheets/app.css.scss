@@ -21,7 +21,7 @@
 
 .index {
   img {
-    padding-bottom: rem-calc(20px);
+    padding-bottom: rem-calc(0px);
   }
 }
 
@@ -36,3 +36,18 @@
     }
 
 }
+
+.my-orbit-caption {
+    @extend .orbit-caption;
+    a {
+      color: #ffffff
+    }
+    @if $orbit-caption-position == "top" {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.slide {
+        padding-bottom: rem-calc(20px);
+    }
